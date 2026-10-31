@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0e;
+  color: white;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px 7%;
+  background: radial-gradient(ellipse at top, #382027, #0b0b0e 65%);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  background: #e34d60;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 20px;
+}
+
+header span, .hero span {
+  color: #ed596b;
+}
+
+.hero {
+  text-align: center;
+  padding: 85px 10px 55px;
+}
+
+.hero h1 {
+  font-size: clamp(35px, 6vw, 65px);
+  margin: 12px 0;
+}
+
+.hero p {
+  color: #aaa;
+}
+
+.tag {
+  color: #ed596b !important;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.cards {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.cards button {
+  background: #18181e;
+  color: white;
+  border: 1px solid #34343d;
+  border-radius: 17px;
+  padding: 30px 20px;
+  cursor: pointer;
+  text-align: right;
+  transition: .2s;
+}
+
+.cards button:hover {
+  border-color: #ed596b;
+  transform: translateY(-4px);
+}
+
+.cards b {
+  display: block;
+  color: #ed596b;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.cards strong, .cards small {
+  display: block;
+}
+
+.cards strong {
+  font-size: 18px;
+}
+
+.cards small {
+  color: #999;
+  margin-top: 8px;
+}
+
+.panel {
+  max-width: 550px;
+  margin: auto;
+  padding: 25px;
+  background: #18181e;
+  border: 1px solid #34343d;
+  border-radius: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  background: #0b0b0e;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 10px;
+}
+
+.primary, .back {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.primary {
+  width: 100%;
+  background: #e34d60;
+  color: white;
+}
+
+.back {
+  background: #292930;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  margin-top: 80px;
+  font-size: 12px;
+}
+
+@media(max-width: 600px) {
+  .app { padding: 20px 16px; }
+  .hero { padding: 60px 5px 35px; }
+}
